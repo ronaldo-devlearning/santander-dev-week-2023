@@ -6,4 +6,6 @@ import com.devlearning.domain.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
+	boolean existsByAccountNumber(String accountNumber);
+	
 }
